@@ -8,6 +8,8 @@
   background-size: cover;
   background-position: center center;
   background-attachment:fixed;
+
+  background-color:rgb(153, 153, 102);
 }
 
 /*Header +nav bar*/
@@ -30,12 +32,6 @@ ul {
   padding: 0.5rem;
 }
 
-@media screen and (max-width: 42.7rem) {
-  ul li {
-    padding:0.5rem;
-  }
-}
-
 /*Hero section*/
 
 .hero {
@@ -50,7 +46,7 @@ button {
 
   padding: 0.5rem;
 
-  background-color: rgb(255,158,158);
+  background-color: rgb(153, 153, 102);
 
   border: 2px solid rgb(0,0,0);
   border-radius: 1rem;
@@ -60,7 +56,7 @@ button {
 
 
 button:hover {
-  background-color:	rgb(145,170,255);
+  background-color:	rgb(153, 128, 102);
 }
 
 
@@ -83,6 +79,10 @@ button:hover {
 
   background-color:rgb(153, 153, 102);
   color: rgb(0,0,0);
+}
+
+.card>figcaption>p {
+  min-width: 20ch;
 }
 
 .jeeppics {
@@ -125,6 +125,10 @@ footer {
 /*media querie*/
 
 @media screen and (max-width: 42.7rem) {
+
+  ul li {
+    padding:0.5rem;
+  }
   /*hamburger menu*/
 
   /*I still want a header on smaller screens when the hamburger menu pops up but i dont know how*/

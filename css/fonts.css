@@ -1,5 +1,4 @@
 /* this css page includes font-family and font size*/
-/*remember to add backup font*/
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&display=swap');
 
@@ -15,25 +14,32 @@ ul .jeep {
 }
 
 ul {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-family: 'Fjalla One', sans-serif;
 }
 
 /*Hero section*/
 
 .hero {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-family: 'Fjalla One', sans-serif;
+
   font-size:24;
   font-size: clamp(20px, 5vw, 32px);
 }
 
 .hero p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  
   font-size:22px;
   font-size: clamp(20px, 3vw, 24px);
-  font-family: 'Montserrat', sans-serif;
 }
 
 button {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-family: 'Montserrat', sans-serif;
+
   font-size: 17px;
   font-size: clamp(14px, 3vw, 24px);
 }
@@ -41,20 +47,27 @@ button {
 /*cards*/
 
 .jeeps {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-family: 'Fjalla One', sans-serif;
+
   font-size:32px;
   font-size: clamp(32px, 3vw, 48px);
 }
 
 .card>figcaption>h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-family: 'Fjalla One', sans-serif;
+
   font-size:32px;
-  font-size: clamp(32px, 3vw, 38px);
+  font-size: clamp(26px, 3vw, 36px);
 }
 
 .card>figcaption>p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-family: 'Montserrat', sans-serif;
+
   font-size: 22px;
+  font-size: clamp(18px, 3vw, 22px);
 }
 
 /*contact*/
@@ -71,10 +84,11 @@ button {
 /*footer*/
 
 footer {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  
   font-size: 20px;
   font-size: clamp(18px, 3vw, 25px);
-
-  font-family: 'Montserrat', sans-serif;
 }
 
 /*media querie*/
