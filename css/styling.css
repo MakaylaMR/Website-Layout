@@ -98,21 +98,18 @@ button:hover {
   padding-bottom: 3rem;
 }
 
-/*contact-form*/
-
-form {
-  padding: 1rem;
-
-  background-color: rgb(0,0,0);
-  color: rgb(255,255,255);
-}
-
 /*gallery*/
 
 .gallery {
   grid-gap: 1rem;
 
   background-color: rgb(0,0,0);
+}
+
+/*google map*/
+
+.map-responsive {
+  padding-bottom: 25rem;
 }
 
 /*footer*/

@@ -1,4 +1,4 @@
-/*this css page includes display, align-items/self, justify-self, margin, position, z-index, left, top, width, height, grid-template, and text-align*/
+/*this css page includes display, align-items/self, justify-self, margin, position, z-index, left, top, width, height, grid-template, overflow, and text-align*/
 
 
 /*main*/
@@ -127,17 +127,6 @@ h1 {
   min-width: 20ch;
 }
 
-/*gallery*/
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-}
-
-img {
-  width: 100%;
-}
-
 /*contact*/
 
 .contact {
@@ -152,18 +141,35 @@ img {
   text-align: center;
 }
 
+/*gallery*/
 
-/*contact form*/
-
-form {
+.gallery {
   display: grid;
-  grid-template-columns: repeat(1, auto);
-
-  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
 }
 
-.contact-form {
-  display:block;
+img {
+  width: 100%;
+}
+
+/*google map*/
+
+.map-responsive {
+  overflow: hidden;
+
+  position: relative;
+
+  height:0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+
+  height: 100%;
+  width:100%;
+
+  position: absolute;
 }
 
 /*footer*/
