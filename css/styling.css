@@ -50,17 +50,17 @@ button {
 
   padding: 0.5rem;
 
-  background-color: rgb(153, 153, 102);
+  background-color: rgb(255,158,158);
 
-  border:none;
-  border-radius: 1.5rem;
+  border: 2px solid rgb(0,0,0);
+  border-radius: 1rem;
 
   transition-duration: 0.5s;
 }
 
 
 button:hover {
-  background-color: rgb(153, 128, 102);
+  background-color:	rgb(145,170,255);
 }
 
 
