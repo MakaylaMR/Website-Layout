@@ -1,0 +1,233 @@
+/*this css page includes display, align-items/self, justify-self, margin, position, z-index, left, top, width, height, grid-template, and text-align*/
+
+
+/*main*/
+
+.container {
+  /*using grid for more practice
+  **EDIT**
+  Jen Simmons you fooled me making this seem easy, I accept the challenge*/
+  display: grid;
+
+  min-height: 100vh;
+
+  align-items: center;
+}
+/*header + nav bar*/
+
+.head {
+  align-self: start;
+}
+
+header li {
+  justify-self: end;
+  align-self: center;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+
+  margin-top: 0;
+}
+
+ul .jeep {
+  justify-self: start;
+  /*decided to include the "logo/home" to the list rather than a heading because i couldn't figure out how to make the heading and nav bar at the very top of the page lined up nicely*/
+}
+
+/*hamburger menu **NOTE** actual hamburger menu is in the media querie below, this is to ensure parts of the html meant for hamburger menu do not show up on larger screens*/
+
+.nav-wrapper [type=checkbox] {
+  /*removes checkbox*/
+  display:none;
+}
+
+#hamburger {
+  /*honestly not sure why I chose position:relative; it worked and did the job so ?*/
+  position: relative;
+
+  z-index: -1;
+}
+
+label {
+  /*this removes whitespace above the header*/
+  display:none;
+}
+
+/*Hero section*/
+
+.hero {
+  /* display:grid to have more control over child elements, specifically the subscribe button */
+  display: grid;
+
+  text-align:center;
+
+  /*if not align-self:start, "Hello World" container would be located in the middle of the grid cell, so lower down the page*/
+  align-self: start;
+
+  /*margin so the container doesnt expand all the way across the page, did not use margin auto because I wanted to button to appear in the middle using align-self: start -- **EDIT**
+  - using margin-left and margin-right does not make it responsive, the "hello world" and subscribe button goes off the page in mobile, however, this makes it so that the box is not centered in the hero section.*/
+  
+  /*margin-left: 22rem;
+  margin-right: 22rem;*/
+  margin:auto;
+}
+
+button {
+  /* without margin:auto subscribe button took up entire grid cell */
+  margin:auto;
+ 
+}
+
+h1 {
+  margin:0;
+}
+
+.hero p {
+  margin:0;
+}
+
+/*cards*/
+
+.jeeps {
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom:0;
+}
+
+.team {
+  /*keeping the flex here in case I somehow manage to mess up the way my cards work*/
+  /*display: flex;
+  flex-wrap: wrap;
+  justify-content: center;*/
+
+  /*when entering the awkward page size where it should be two on top and 1 bottom middle it doesnt do that? still does two on top but the one on the bottom is located on the left, this is probably because of how grid is built--look into it*/
+
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+  margin: 1em auto;
+  min-width: 30ch;
+  max-width: 40ch;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.card>figcaption>h2 {
+  text-align: center;
+}
+
+.card>figcaption>p {
+  max-width: 95ch;
+  min-width: 20ch;
+}
+
+/*gallery*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+}
+
+img {
+  width: 100%;
+}
+
+/*contact*/
+
+.contact {
+  display:grid;
+
+  /*needed to override the repeat(5,auto); in the header+nav section of this css page (listed under ul)*/
+  grid-template-columns: repeat(3, auto);
+
+  /*used to remove whitespace at bottom*/
+  margin: 0;
+
+  text-align: center;
+}
+
+
+/*contact form*/
+
+form {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+
+  text-align: center;
+}
+
+.contact-form {
+  display:block;
+}
+
+/*footer*/
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin:0;
+}
+
+/*media querie*/
+
+@media screen and (max-width: 42.7rem) {
+  ul {
+    display: block;
+
+    text-align: center;
+  }
+
+/*hamburger menu*/
+
+  .nav-wrapper [type=checkbox] {
+    display:none;
+  }
+  
+  .nav-menu {
+    display:none;
+  }
+  
+  #toggle:checked ~ * ~ .nav-menu {
+    display:block;
+  }
+  
+  #hamburger {
+    /*this overrides the z-index:-1; allowing it to show up on on smaller screen widths*/
+    z-index: 1;
+  }
+  
+  label {
+    /*chose absolute because I wanted to move the label relative to it's parent element; which is the div .nav-wrapper. wanted this so i could move the icon to the very right of the div*/
+    position:absolute;  
+
+    /*display inline-block enveloped the hamburger menu icon perfectly*/
+    display:inline-block;
+
+    right:0;
+  }
+}
+
+/*Reset*/
+
+* {
+  /*Tony told me to use this one*/
+  box-sizing: border-box;
+}
+
+body {
+  /*makes it so it consumes 100% of the page*/
+  margin: 0;
+}
+
+ul li {
+  /*removes oogly bullet points ew*/
+  list-style: none;
+}
