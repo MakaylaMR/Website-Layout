@@ -1,13 +1,18 @@
 # Web Contruction Fund. (CPNT260)
 ## Author/Creator: Makayla Martineau Raymundo
 ## Context
-This website in simple terms shows off my Jeep and my partner's Jeep. This site includes; a hero section, a horizontal navigation bar that turns into a hamburger menu at small enough screen sizes, a contact section, a gallery and a footer.
+This website in simple terms shows off my Jeep and my partner's Jeep. This site includes; a hero section, a horizontal navigation bar that turns into a hamburger menu at small enough screen sizes, a contact section, a gallery, an interactive google maps and a footer. 
+
+Please note that the links associated in the header do not lead to anything, their href="#".
 
 ## Links
-GitHub Repository: https://github.com/MakaylaMR/cpnt260-a3
+GitHub Repository: https://github.com/MakaylaMR/cpnt260-a4
 
-Published at: https://makaylamr.github.io/cpnt260-a3/
+Published at: https://makaylamr.github.io/cpnt260-a4/
 ## Requirements
+
+You should expect the site to be completely responsive for any screen size.
+
 ### CSS
 I have added comments in my css pages such as "body,header, nav bar, etc.." to help you navigate the css page.
 
@@ -29,6 +34,7 @@ The HTML also includes comments, these comments explain any difficulties I had, 
 |FontAwesome | [FontAwesome Icon](https://fontawesome.com/icons/bars?style=solid) |[FontAwesome License](https://fontawesome.com/license#license)|
 |Google | [Google Maps](https://www.google.com/maps/place/Waiparous+Village,+AB/@51.2836874,-114.8722322,13.25z/data=!4m5!3m4!1s0x537131d998fc427d:0x5e81da48460c5207!8m2!3d51.283263!4d-114.8389065) |[Google Maps License](https://about.google/brand-resource-center/products-and-services/geo-guidelines/#google-maps)|
 |Valentin Garcia | [OSTraining](https://www.ostraining.com/blog/coding/responsive-google-maps/) |[OSTraining License](https://creativecommons.org/licenses/by-nc/3.0/)|
+
 
 ## Attributions (in-class)
 |Person| Links | Layout applied (HTML and/or CSS)|
