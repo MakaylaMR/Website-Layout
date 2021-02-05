@@ -110,7 +110,7 @@ h1 {
 }
 
 .card {
-  margin: 1em auto;
+  margin: 1em;
   min-width: 30ch;
   max-width: 40ch;
   
