@@ -41,7 +41,10 @@
         <button>Register</button>
       </div>
     </section>
+    <div>
+      <!-- this div made it so when i inspect element in firefox there was no more overflow, so i added these to all h2 elements. This did not solve all overflow elements.-->
       <h2 class="jeeps">The Team</h2>
+    </div>
     <section class="team">
       <article class="card">
         <img class="jeeppics"src="assets/images/jeep-profile-makayla.jpg"alt="beige/gold 2003 Jeep TJ">
@@ -67,7 +70,9 @@
       </article>
     </section>
     <section>
-      <h2 class="jeeps">Contact</h2>
+      <div>
+        <h2 class="jeeps">Contact</h2>
+      </div>
       <!--i couldnt find anywhere that could tell me if ul was a sibling element to h2 so I went with my gut i'm willing to take one for the team **EDIT** ash came in clutch and told me the answer-->
       <ul class="contact">
           <!--to be completely honest not sure why i am not sure as to why i decided to use id rather than class... seems like ive been using a lot of classes -- also had to specify id because the css linked to ul, a and li wasnt responding properly-->
@@ -75,8 +80,10 @@
         <li><a href="https://www.facebook.com/makayla.martineauraymundo/"><i id="social"class="fab fa-facebook-square"></i>Facebook</a></li>
         <li><a href="https://www.instagram.com/jeeptjyyc/"><i id="social"class="fab fa-instagram"></i>Instagram</a></li>
       </ul>
-    </section>  
+    </section> 
+    <div>
       <h2 class="jeeps">Off-Roading Gallery</h2>
+    </div> 
     <section class="gallery">
       <!--when the images go into columns of 3 the last row only has one image and is located to the very left -- fix this-->
       <img src="assets/images/jeepjk-bctrip.jpg" alt="2007 black Jeep JK rear end with a trasharoo bag on the spare tire. surrounded by a forest in BC.">
@@ -91,13 +98,15 @@
       <img id="jeepjk"src="assets/images/jeep-profile-nathan.jpg" alt="2007 black Jeep JK facing forwards with the front tires turned to the left side of the image.">
     </section>
     <!--below is not my original code, I have put in my README under attributions the author of the codes (Google + Valentin Garcia)-->
+    <section>
       <div class="map-responsive">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33575.19125722797!2d-114.87223215231182!3d51.28368743192057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537131d998fc427d%3A0x5e81da48460c5207!2sWaiparous%20Village%2C%20AB!5e0!3m2!1sen!2sca!4v1612477462806!5m2!1sen!2sca" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
+    </section>
   </main>
   <!--I am not 100% certain if the footer should be located inside or outside the main element-->
-  <footer>
-    <p>&copy Copyright 2021 by Makayla M.R. All rights reserved.</p>
-  </footer>
+    <footer>
+      <p>&copy Copyright 2021 by Makayla M.R. All rights reserved.</p>
+    </footer>
 </body>
 </html>
