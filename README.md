@@ -3,8 +3,6 @@
 ## Context
 This website in simple terms shows off my Jeep and my partner's Jeep. This site includes; a hero section, a horizontal navigation bar that turns into a hamburger menu at small enough screen sizes, a contact section, a gallery, an interactive google maps and a footer. 
 
-Please note that the links associated in the header do not lead to anything, their href="#".
-
 ## Links
 GitHub Repository: https://github.com/MakaylaMR/cpnt260-a4
 

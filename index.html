@@ -23,9 +23,9 @@
             <ul>
                 <!--had to specify list items as I wanted the "Jeep" list to be different than the rest.-->
               <li class="jeep"><a href="#">Jeep</a></li>
-              <li class="list"><a href="#">The Team</a></li>
-              <li class="list"><a href="#">Contact</a></li>
-              <li class="list"><a href="#">Gallery</a></li>
+              <li class="list"><a href="#team">The Team</a></li>
+              <li class="list"><a href="#contact">Contact</a></li>
+              <li class="list"><a href="#gallery">Gallery</a></li>
               <li class="list"><a href="#">Login</a></li>
             </ul>
           </nav>
@@ -43,7 +43,7 @@
     </section>
     <div>
       <!-- this div made it so when i inspect element in firefox there was no more overflow, so i added these to all h2 elements. This did not solve all overflow elements.-->
-      <h2 class="jeeps">The Team</h2>
+      <h2 class="jeeps" id="team">The Team</h2>
     </div>
     <section class="team">
       <article class="card">
@@ -71,7 +71,7 @@
     </section>
     <section>
       <div>
-        <h2 class="jeeps">Contact</h2>
+        <h2 class="jeeps" id="contact">Contact</h2>
       </div>
       <!--i couldnt find anywhere that could tell me if ul was a sibling element to h2 so I went with my gut i'm willing to take one for the team **EDIT** ash came in clutch and told me the answer-->
       <ul class="contact">
@@ -82,7 +82,7 @@
       </ul>
     </section> 
     <div>
-      <h2 class="jeeps">Off-Roading Gallery</h2>
+      <h2 class="jeeps" id="gallery">Off-Roading Gallery</h2>
     </div> 
     <section class="gallery">
       <!--when the images go into columns of 3 the last row only has one image and is located to the very left -- fix this-->
