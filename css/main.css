@@ -113,6 +113,8 @@ h1 {
   margin: 1em;
   min-width: 30ch;
   max-width: 40ch;
+
+  justify-self: center;
   
   display: flex;
   flex-direction: column;
