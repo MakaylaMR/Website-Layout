@@ -90,11 +90,12 @@ h1 {
 
 /*cards*/
 
+
+/**.jeeps class applies to all h2 elements**/
 .jeeps {
   text-align: center;
 
-  margin-top: 0;
-  margin-bottom:0;
+  margin: 0;
 }
 
 .team {
@@ -151,7 +152,7 @@ h1 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /*google map*/

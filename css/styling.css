@@ -104,6 +104,8 @@ button:hover {
   grid-gap: 1rem;
 
   background-color: rgb(0,0,0);
+
+  padding-bottom: 1rem;
 }
 
 /*google map*/
